@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+:root {
+    --color-dark: rgb(20 8 44);
+    --color-white: white;
+    --color-black: black;
+    --color-btn: grey;
+    --color-gray: grey;
+    --color-danger: red;
+    --color-p1: blue;
+    --color-primary: rgb(123, 45, 123);
+    --color-succes: rgb(64, 209, 64);
+    --color-light: rgb(231, 220, 220);
+    --color-secondary: rgb(210, 207, 207);
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.2rem 1.3rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 0.5rem 1rem;
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-white);
+    background-color: var(--color-light);
+    overflow-x: hidden;
+}
+
+/* ----------THEME---------- */
+.btn {
+    /* background-color: var(--color-btn); */
+    padding: var(--btn-padding);
+    border-radius: var(--card-border-radius);
+    font-size: 0.9rem;
+}
+
+.logo1 {
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 50%;
+}
+
+.right {
+    color: black;
+}
+
+
+
+/* ============NAVBAR============== */
+nav {
+    width: 100%;
+
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: var(--color-dark);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    /* margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 100%; */
+}
+
+nav .container .logo span {
+    transform: rotate(45deg);
+    background-color: white;
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    bottom: 0.6rem;
+    right: 0.1rem;
+
+
+}
+
+/* nav .container .logo i{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -3;
+} */
+nav .container .logo {
+    margin-left: 1.5rem;
+    border-bottom: 2px solid white;
+    position: relative;
+}
+
+/* ......NAV BUTTON.... */
+nav .login {
+    display: flex;
+    margin: 1rem 0;
+    gap: 0.6rem;
+}
+
+nav .cart {
+    display: flex;
+    margin: 1rem 0;
+    gap: 0.6rem;
+    margin-right: 1.5rem;
+}
+
+nav .sign-in {
+    display: flex;
+    margin: 1rem 0;
+    gap: 0.6rem;
+}
+
+/* ......NAV BUTTON.... */
+
+nav .container .searchbar i {
+
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}
+
+nav .container .searchbar>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .container .searchbar {
+    position: relative;
+}
+
+nav .container .searchbar input {
+    width: 40vw;
+    padding: var(--search-padding);
+    border-radius: var(--card-border-radius);
+}
+
+nav .container .searchbar span {
+    background-color: var(--color-white);
+    z-index: 1;
+    padding: 0.5rem 1rem;
+    border-bottom-right-radius: var(--card-border-radius);
+    border-top-right-radius: var(--card-border-radius);
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 2.2rem;
+    background-color: var(--color-gray);
+
+
+}
+
+nav .in {
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* ============NAVBAR ENDS============= */
+/* =============LEFT-MENU-BAR=========== */
+/* REMEMBER IF I DONT WRITE (main .container) i.e LEAVE MAIN THEN GRID WONT WORK HERE */
+/* main{
+    position: relative;
+} */
+
+main .container1 {
+    /* margin-top: 5rem; */
+    display: grid;
+    grid-template-columns: auto 95vw;
+    grid-gap: 1rem;
+    position: relative;
+    /* height: max-content; */
+
+}
+
+
+/* -------SIGN------ */
+main .container1 .left {
+    background-color: black;
+    height: 100%;
+    position: fixed;
+    margin-top: 5rem;
+}
+
+main .container1 .left .sign {
+    margin: 1rem 0rem;
+    padding: var(--card-padding);
+    transition: all 300ms ease;
+
+}
+
+main .container1 .left .sign h3 {
+    font-size: 1.1rem;
+}
+
+main .container1 .left .sign span {
+    margin-top: 1rem;
+    background-color: white;
+    height: 0.01rem;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+/* ---------SIGN------- */
+/* ------------bar-1---------- */
+main .container1 .left .bar-1 a {
+    display: flex;
+    padding: 0.3rem 1rem;
+    /* background-color: greenyellow; */
+    cursor: pointer;
+    margin: 0.3rem 1rem;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+main .container1 .left .bar-1 #span {
+    margin-top: 0.9rem;
+    background-color: white;
+    height: 0.01rem;
+    width: 85%;
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-left: 1rem;
+
+
+}
+
+main .container1 .left .bar-2 a {
+    font-size: 0.8rem;
+    display: flex;
+    padding: 0.3rem 0.2rem;
+    margin: 0.2rem 1rem;
+    /* background-color: green; */
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+main .container1 .left .bar-2 #h3 {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* ==========RIGHT============ */
+/* -------TOP------ */
+main .container1 .right {
+    background-color: white;
+    margin-top: 5rem;
+    margin-left: 11rem;
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+
+}
+
+
+
+main .container1 .right .bottom {
+    color: var(--color-black);
+    display: flex;
+    gap: 1rem;
+
+}
+
+main .container1 .right .top {
+    color: var(--color-dark);
+    text-align: center;
+    margin: 1rem 1rem;
+}
+
+/* ----------TOP ENDS--------- */
+/* ---------MID TOP------------ */
+/* main .container1 .right .mid-top{
+    display: flex;
+    
+} */
+main .container1 .right .mid-top .deliver {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+main .container1 .right .mid-top span {
+    margin: 1rem 0;
+    background-color: var(--color-gray);
+    height: 0.1rem;
+    width: 100%;
+    position: absolute;
+}
+
+main .container1 .right .mid-top {
+    margin: 2rem 0;
+}
+
+
+
+/* ----------MID TOP ENDS----------- */
+/* ------------CONTENT-MID-TOP--------- */
+main .container1 .right .content-mid-top {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    margin-left: 0.8rem;
+
+}
+
+main .container1 .right .content-mid-top .product-type h4 {
+    text-align: center;
+}
+
+/* ------------CONTENT-MID-TOP ENDS------------ */
+/* -------------CONTENT-BOTTOM-STARTS---------------- */
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+main .container1 .right .bottom .bottom-1 {
+    display: flex;
+    margin-left: 1rem;
+    gap: 1.8rem;
+    margin-bottom: 1.5rem;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+main .container1 .right .bottom .bottom-1 .bottom-1-offer {
+
+    padding: 1rem;
+
+}
+
+main .container1 .right .bottom .bottom-1 .grid {
+    grid-template-columns: 10rem 10rem;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+main .container1 .right .bottom .bottom-1 .grid img {
+    height: 8rem;
+    width: 8rem;
+}
+
+main .container1 .right .bottom .bottom-1 img {
+    height: 18rem;
+    width: 18rem;
+    margin-top: 1rem;
+
+}
+
+/* main .container1 .right .bottom .bottom-1 {
+    display: flex;
+    gap: 0.1rem;
+    justify-content: start;
+    background-color: red;
+}
+
+main .container1 .right .bottom .bottom-1 .truck {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     border: 1px solid black; 
+}
+
+main .container1 .right .bottom .bottom-1 #t {
+    border-radius: 50rem;
+} */
+
+main .container1 .right .bottom .bottom-2 {
+    border: 1px solid black;
+    display: flex;
+    padding: var(--card-padding);
+    /* margin-bottom: 1rem; */
+}
+
+main .container1 .right .top h2 {
+    margin-top: 2rem;
+}
+
+
+
+/* -------------CONTENT-BOTTOM-ENDS----------------  */
+/* ----------CONTENT-MID-STARTS----------- */
+main .container1 .bottom img {
+    transition: all 0.5s;
+}
+
+main .container1 .right .mid .box-1 img {
+    height: 23rem;
+    width: 20rem;
+    border-radius: 7px;
+    /* position: relative; */
+
+}
+
+main .container1 .right .mid .slide {
+    position: absolute;
+    top: 32.5%;
+    z-index: 1;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+
+}
+
+main .container1 .right .mid .slide span {
+    font-size: 6rem;
+    background-color: rgb(236 236 240 / 69%);
+    height: 9rem;
+    width: 6rem;
+    text-align: center;
+    color: #00000054;
+
+}
+
+main .container1 .right .mid .left1 {
+    /* top: 50%; */
+    left: 0;
+    margin-bottom: 2rem;
+}
+
+main .container1 .right .mid .right1 {
+    /* top: 50%; */
+    right: 0;
+}
+
+main .container1 .right .mid .box-2 {
+    overflow: hidden;
+    height: 23rem;
+    width: 55vw;
+    position: relative;
+}
+
+main .container1 .right .mid .box-2 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+
+    /* position: relative; */
+}
+
+main .container1 .right .mid {
+   
+    display: flex;
+    /* gap: 1rem; */
+    justify-content: space-evenly;
+   
+    background-color: rgb(233 233 233);
+
+    margin: 1.8rem 0.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* ---------CONTENT-MID-ENDS---------- */
+/* =================CONTENT ENDS========== */
+/* ============FOOTER STARTS========== */
+footer .foot-1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem;
+
+}
+
+footer .foot-1 ul {
+    margin-top: 1rem;
+}
+
+footer .foot-1 ul li {
+
+    font-size: 0.8rem;
+
+}
+
+footer .foot-2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .foot-2 img {
+    height: 3rem;
+    width: 8rem;
+    margin: 1rem;
+}
+
+footer .foot-2-0 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: rgb(30, 17, 54);
+}
+
+/* ==============FOOTER ENDS=========== */
+/* =============SECTION-STARTS============ */
+
+/* ============ANIMATION============ */
+.product-type {
+    box-sizing: border-box;
+    color: black;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    font-weight: bolder;
+}
+
+.product-type:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.bottom-1-offer {
+    box-sizing: border-box;
+
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    font-weight: bolder;
+}
+
+.bottom img:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+footer .foot-2 img:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* ================HOVER============= */
+main .container1 .left .menu-item:hover {
+    background-color: rgba(128, 128, 128, 0.493);
+}
+
+main .container1 .left .sign h5:hover {
+    background-color: rgba(128, 128, 128, 0.493);
+}
+
+main .container1 .left .menu-item:hover {
+    background-color: rgba(128, 128, 128, 0.493);
+}
+
+nav .container .in div:hover {
+    background-color: rgba(128, 128, 128, 0.493);
+}
+
+nav .container .searchbar:active {
+    border: 2px solid rgb(0, 166, 255);
+    border-radius: var(--card-border-radius);
+}
+
+
+
+/* ==============REsponsive design.=============== */
+@media screen and (max-width:992px){
+    main .container1 .sign{
+        display: none;
+    }
+    main .container1 .left h3{
+        display: none;
+
+    }
+    main .container1 .right{
+        margin-left: 0;
+    }
+    footer{
+        display: none;
+    }
+    .content-mid-top{
+        flex-wrap: wrap;
+        font-size: 1rem;
+    }
+    .content-mid-top a img{
+        height: 2rem;
+        width: 2rem;
+     }
+     nav .searchbar{
+        display: none;
+     }
+     nav .container{
+        justify-content: start;
+        gap: 2rem;
+     }
+     main .container1 .right .content-mid-top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 0.8rem;
+     }
+} 
