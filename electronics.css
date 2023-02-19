@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+:root {
+    --color-dark: rgb(20 8 44);
+    --color-white: white;
+    --color-black: black;
+    --color-btn: grey;
+    --color-gray: grey;
+    --color-danger: red;
+    --color-p1: blue;
+    --color-primary: rgb(123, 45, 123);
+    --color-succes: rgb(64, 209, 64);
+    --color-light: rgb(231, 220, 220);
+    --color-secondary: rgb(210, 207, 207);
+    --border-radius: 2rem;
+    --card-border-radius: 0.8rem;
+    --btn-padding: 0.2rem 1.3rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 0.5rem 1rem;
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-white);
+    background-color: var(--color-light);
+    overflow-x: hidden;
+}
+
+
+/* ----------THEME---------- */
+.btn {
+    /* background-color: var(--color-btn); */
+    padding: var(--btn-padding);
+    border-radius: var(--card-border-radius);
+    font-size: 0.9rem;
+}
+
+.logo1 {
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 50%;
+}
+
+.right {
+    color: black;
+}
+
+/* ---------THEME ENDS--------- */
+/* --------PRODUCT-INFORMATION BEGINS------- */
+section {
+    color: black;
+    height: 100%;
+    width: 100vw;
+    background-color: rgb(224 224 224);
+    margin-top: 8rem;
+    display: flex;
+    /* gap: 0; */
+    /* grid-template-columns: 25rem auto; */
+}
+
+section .mobile {
+
+    /* border: 2px solid black; */
+    display: flex;
+    /* justify-content: space-evenly;
+    align-items: center; */
+    gap: 1rem;
+    margin: 2rem;
+    /* height: 61rem; */
+    flex-direction: column;
+    margin-top: 0.6rem;
+    /* background-color: var(--color-white); */
+    padding: 1.9rem;
+    padding-top: 0.7rem;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+
+
+}
+section .mobile .mob .title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0rem;
+}
+
+.mob-left {
+    width: 12rem;
+    height: 15.8rem;
+    border-radius: 0.8rem;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+}
+
+
+section .mobile .washing-machine .flex-3item .fashion img {
+    padding: 1rem 1rem;
+    height: 17rem;
+    width: 13rem;
+}
+section .mobile .laptop .flex-3item .fashion img {
+    padding: 1rem 1rem;
+    height: 12rem;
+    width: 15rem;
+}
+section .mobile .refrigerator .flex-3item .fashion img {
+    padding: 1rem 1rem;
+    height: 16rem;
+    width: 11rem;
+}
+section .mobile .tv .flex-3item .fashion img {
+    padding: 1rem 1rem;
+    height: 10rem;
+    width: 14rem;
+}
+section .mobile .mob .flex-3item .fashion h6{
+    margin-bottom: 0.6rem;
+}
+
+/* section .mobile h4 {
+    margin-top: 0.2rem;
+    margin-bottom: 0.6rem;
+} */
+
+section .price {
+    margin-left: 1rem;
+}
+
+/* ------------PRODUCT-INFORMATION-ENDS---------- */
+/* -------------product box starts---------------- */
+
+section .mobile .mob {
+    padding: 1rem 3rem;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    /* border-top: 1px solid black; */
+    /* border-bottom: 1px solid black; */
+    /* height: 50rem; */
+    align-items: center;
+    /* justify-content: space-evenly; */
+    /* width: 20rem; */
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+}
+
+section .mobile .mob .flex-3item .fashion {
+    /* height: 25.8rem; */
+    border-radius: 0.8rem;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+    text-align: center;    
+    /* margin: 1rem 1rem; */
+    margin-bottom: 1rem;
+}
+/* section .mobile .mob .flex-3item{
+    display: flex;
+    gap: 1rem;
+     padding: 0rem 2rem; 
+} */
+
+
+section .mobile-left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.3rem;
+    background-color: var(--color-white);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: var(--card-border-radius);
+    text-align: center;
+}
+
+section .mobile-left .mob-left img {
+    height: 14rem;
+    width: 16rem;
+    margin: 0.5rem;
+}
+
+
+section .mobile-left .mob-left {
+    display: flex;
+    flex-direction: column;
+    /* border-top: 1px solid black; */
+    padding: 1rem;
+    margin: 0.6rem 1rem;
+    height: 29rem;
+    width: 20rem;
+}
+
+section .mobile-left h3 {
+    text-align: center;
+    margin-top: 0rem;
+}
+
+/* ================NABBAR for TABS STARTS=============== */
+nav .nav-for-tabs {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: 0.3rem;
+    padding: 0.4rem 0;
+    margin-bottom: 0;
+    background-color: rgb(66 76 186 / 22%);
+
+}
+
+nav .nav-for-tabs a {
+    color: white;
+}
+
+/* ===============FASHION MOB=========== */
+section .mobile .mob {
+    display: flex;
+    flex-direction: column;
+    /* padding: 1rem 3rem;  */
+}
+
+section .mobile .mob .flex-3item {
+    display: flex;
+     gap: 1rem;
+    
+}
+/* .electronics .flex-3item .fashion img{
+    height: 10rem;
+    width: 20rem;
+} */
+small{
+    color: gray;
+}
+.price-color{
+    color: green;
+}
+.star-color
+{
+    background-color: yellow;
+}
+.nav-for-tabs a{
+    padding: 0.4rem;
+    border-radius: 5px;
+    transition: all 300ms;
+}
+.nav-for-tabs a:hover{
+    background-color: rgba(128, 128, 128, 0.5);
+}
